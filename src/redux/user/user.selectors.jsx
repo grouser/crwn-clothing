@@ -6,5 +6,5 @@ const selectCart = state => state.cart;
 
 export const selectCurrentUser = createSelector(
     [selectUser, selectCart],
-    (user) => user.currentUser
+    (user, cart) => user.currentUser
 );
